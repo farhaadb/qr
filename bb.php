@@ -25,7 +25,7 @@
 	
 	if(isset($_POST['submit']) && $qCheck == false && $sCheck == false)
 		{
-			$con = mysql_connect("107.170.89.145","root","athens");
+			$con = mysql_connect("127.0.0.1","root","athens");
 			
 			if (!$con)
 			{
@@ -49,7 +49,7 @@
 <td style = 'text-align:center;'>
 		<h1><b>Quote Mine</b><u>Quote Mine</u></h1>
 	</td>
-	<form action = "insert.php" method = "post">
+	<form action = "bb.php" method = "post">
 	Quote
 	<textarea placeholder="Enter Quotes Here..." name = "quote" cols = "40" rows = "6" ><?php  if($qCheck) echo "Enter a quote"; ?></textarea></br></br>
 	Name
