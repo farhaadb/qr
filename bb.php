@@ -37,7 +37,7 @@
 				echo "select db error ".mysql_error($con);
 			}
 
-			if(!mysql_query("INSERT INTO breaking_badb (quote, name)
+			if(!mysql_query("INSERT INTO breaking_bad (quote, name)
 			VALUES ('".$_POST['quote']."', '".$_POST['name']."')"))
 			{
 				echo "query error ".mysql_error($con);
