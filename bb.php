@@ -32,7 +32,7 @@
 				die('Could not connect: ' . mysql_error());
 			}
 
-			mysql_select_db("dev", $con);
+			mysql_select_db("quoterush", $con);
 
 			mysql_query("INSERT INTO bb (quote, name)
 			VALUES ('".$_POST['quote']."', '".$_POST['name']."')");

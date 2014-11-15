@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>QuoteRush: Loader</title>
-<link rel='stylesheet' type='text/css' href='header.css'>
+<link rel='stylesheet' type='text/css' href='qr/header.css'>
 <center>
 <?php
 
@@ -32,7 +32,7 @@
 				die('Could not connect: ' . mysql_error());
 			}
 
-			mysql_select_db("dev", $con);
+			mysql_select_db("quoterush", $con);
 
 			mysql_query("INSERT INTO arrow (quote, name)
 			VALUES ('".$_POST['quote']."', '".$_POST['name']."')");
