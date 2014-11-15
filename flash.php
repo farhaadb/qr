@@ -25,7 +25,7 @@
 	
 	if(isset($_POST['submit']) && $qCheck == false && $sCheck == false)
 		{
-			$con = mysql_connect("http://dev-quoterush.rhcloud.com/","adminwnvmJbE","xqpNsS3rne2M");
+			$con = mysql_connect("http://dutnoticeboard.co.za","root","athens");
 			
 			if (!$con)
 			{
