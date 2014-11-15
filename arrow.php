@@ -32,10 +32,16 @@
 				die('Could not connect: ' . mysql_error());
 			}
 
-			mysql_select_db("quoterush", $con);
-
-			mysql_query("INSERT INTO arrow (quote, name)
-			VALUES ('".$_POST['quote']."', '".$_POST['name']."')");
+			if(!mysql_select_db("quoterush", $con))
+			{
+				echo "select db error ".mysql_error($con);
+			}
+			
+			if(!mysql_query("INSERT INTO arrow (quote, name)
+			VALUES ('".$_POST['quote']."', '".$_POST['name']."')"))
+			{
+				echo "query error ".mysql_error($con);
+			}
 
 			mysql_close($con);
 		}
