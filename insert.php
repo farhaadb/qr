@@ -25,7 +25,7 @@
 	
 	if(isset($_POST['submit']) && $qCheck == false && $sCheck == false)
 		{
-			$con = mysql_connect("http://dutnoticeboard.co.za","root","athens");
+			$con = mysql_connect("107.170.89.145","root","athens");
 			
 			if (!$con)
 			{
